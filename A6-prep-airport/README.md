@@ -5,10 +5,12 @@ The project was to create a Flight Dashboard for an airport, built on the provid
 The resulting app displays flights by airline, flight number, origin/destination, arrival/departure time, gate and current flight status. The dashboard automatically sorts flights into the Arrivals or Departures tabs, and allows the user to search by airine, flight no., city, or flight status. 
 
 This project gave me additional practice on building in Angular from the ground up, and leaned heavily on unit testing.
-    - fetching JSON and building filtering logic to sort by arrival/departure
-    - passing data from parent to child components in Angular
-    - implementing sorting and formatting with on-click, keyup, ternary operators, and boolean logic
-    - CSS classes for tab and text highlighting
+- fetching JSON and building filtering logic to sort by arrival/departure
+- passing data from parent to child components in Angular
+- implementing sorting and formatting with on-click, keyup, ternary operators, and boolean logic
+- CSS classes for tab and text highlighting
+
+Initial instructions and setup details follow below.
 
 ---
 
