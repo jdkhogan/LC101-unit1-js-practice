@@ -13,6 +13,8 @@ This project gave me additional practice on several aspects related to the DOM:
 - JS map and filter functions
 - mapping out default behavior (what should happens if user doesn't choose a category? ...drink type?)
 
+![Image](/A5-prep-drinks/drinks_screenshot.png)
+
 Initial instructions and setup details follow below.
 
 ---
