@@ -14,6 +14,8 @@ This project gave me additional practice on several aspects related to the DOM:
 - shuffle function to randomize questions
 - real-time scoring function
 
+![Image](/A5-prep-trivia/trivia_screenshot.png)
+
 Initial instructions and setup details follow below.
 
 ---
