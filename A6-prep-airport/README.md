@@ -10,6 +10,8 @@ This project gave me additional practice on building in Angular from the ground 
 - implementing sorting and formatting with on-click, keyup, ternary operators, and boolean logic
 - CSS classes for tab and text highlighting
 
+Initial instructions and setup details follow below.
+
 ---
 
 You are going to create a page with Arrivals and Departures boards that list all the flights scheduled to come and go at the Chattanooga Metropolitan Airport. Users will be able to switch back and forth between the boards and will also be able to filter the lists of flights by airline, flight number, city, or status. You will take advantage of Angular's component-based architecture to set up dynamic functionality on a single-page app. Ready?
