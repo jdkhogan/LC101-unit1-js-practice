@@ -14,6 +14,8 @@ This project gave me additional practice on several aspects related to the DOM:
 - shuffle function to randomize questions
 - real-time scoring function
 
+Initial instructions and setup details follow below.
+
 ---
 
 Part 2 of prep for graded assignment 5 in LaunchCode's WebDev unit - the DOM
