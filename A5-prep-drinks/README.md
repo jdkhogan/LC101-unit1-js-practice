@@ -13,6 +13,8 @@ This project gave me additional practice on several aspects related to the DOM:
 - JS map and filter functions
 - mapping out default behavior (what should happens if user doesn't choose a category? ...drink type?)
 
+Initial instructions and setup details follow below.
+
 ---
 
 Part 3 of prep for graded assignment 5 in LaunchCode's WebDev unit - the DOM
