@@ -10,7 +10,7 @@ This project gave me additional practice on building in Angular from the ground 
 - implementing sorting and formatting with on-click, keyup, ternary operators, and boolean logic
 - CSS classes for tab and text highlighting
 
-![Image](/flight_dashboard_screenshot.png)
+![Image](/A6-prep-airport/flight_dashboard_screenshot.png)
 
 Initial instructions and setup details follow below.
 
