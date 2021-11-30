@@ -5,13 +5,13 @@ The project was to create a Cocktail recipe app using the API from [The Cocktail
 The resulting app asks the user to select an optional category, then search by drink name or ingredient. The user must choose alcoholic drinks or mocktails, or both. If the user does not select a category or drink name/ingredient, the app returns the appropriate subset of drinks.
 
 This project gave me additional practice on several aspects related to the DOM:
-    - fetch functions and APIs
-    - handling JSON objects in JS arrays
-    - window, document and form event listeners
-    - populating menus with loops
-    - form validation
-    - JS map and filter functions
-    - mapping out default behavior (what should happens if user doesn't choose a category? ...drink type?)
+- fetch functions and APIs
+- handling JSON objects in JS arrays
+- window, document and form event listeners
+- populating menus with loops
+- form validation
+- JS map and filter functions
+- mapping out default behavior (what should happens if user doesn't choose a category? ...drink type?)
 
 ---
 
