@@ -1,0 +1,26 @@
+<div id="all-content">
+  <!-- TODO: Insert header component -->
+  <app-header></app-header>
+  <div id="tabs-and-form">
+      <div id="tabs">
+          <div class="tab" (click)="showArrivals = true" [class.tab-active]="showArrivals">
+              <h3>ARRIVALS</h3>
+          </div>
+          <div class="tab" (click)="showArrivals = false" [class.tab-active]="!showArrivals">
+              <h3>DEPARTURES</h3>
+          </div>
+      </div>
+      <div id="filter-form">
+          <input #keyword type="text" (keyup.enter)="filterFlights(keyword.value)" placeholder="Search by airline, flight no., city, or status." />
+          <div id="button-group">
+              <button id="reset-button" (click)="resetFlights()">Reset</button>
+              <button id="submit-button" (click)="filterFlights(keyword.value)">Get Flights</button>
+          </div>
+      </div>
+  </div>
+  <div id="board">
+      <!-- TODO: Insert two instances of the board component -->
+      <app-board *ngIf="showArrivals" [flights]="filteredArrivals" [type]="arrivalText"></app-board>
+      <app-board *ngIf="!showArrivals" [flights]="filteredDepartures" [type]="departureText"></app-board>
+  </div>
+</div>

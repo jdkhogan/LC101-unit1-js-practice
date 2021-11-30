@@ -1,0 +1,177 @@
+/**** CASCADING STYLE SHEET ****/
+
+/*
+    This sheet does not need to be edited unless you want to.
+*/
+
+/**** Defaults for standard elements ****/
+
+body {
+	background-color: white;
+	font-family: "Roboto", sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+	color: #222; 
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+    overflow-x: hidden; 
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+	background-color: #05508d;
+    height: 120px;
+    padding: 20px 100px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	width: 100%;
+    padding: 30px 100px;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80px;
+    padding: 20px 100px;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 0px 0px 30px;
+}
+
+div {
+    position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+    margin: .5rem 0px; 
+}
+
+button {
+    height: 1.3rem;
+    width: 50px;
+    padding: 3px;
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    background-color: #05508d;
+    border: none;
+    border-radius: 3px;
+    margin: 6px 0px 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #013a68;
+}
+
+button:focus {
+    outline: 0;
+}
+
+
+/**** IDs for specific elements ****/
+
+#page-title {
+	font-family: "Bungee Shade", "Roboto", sans-serif;
+	font-size: 2.5rem;
+	margin: 0px;  
+}
+
+#byline {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#opentdb-link {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#opentdb-link.hover {
+    color: #ffda35;
+}
+
+#opentdb-link.visited {
+    color: white;
+}
+
+#num-questions {
+    width: 40px;
+}
+
+
+/**** Classes for custom styles ****/
+
+.score {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    visibility: hidden;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 20px 5px 0px;
+}
+
+label.request {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.q-container {
+    margin: 0px 0px 30px;
+}
+
+.q-number {
+    font-family: "Bungee Shade", "Roboto", sans-serif;
+    font-size: 2rem;
+    color: #05508d;
+    margin: 0px 0px 12px;
+}
+
+.q-question {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.q-option {
+    margin-right: 10px;
+}
+
+.q-info {
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 14px 0px 0px;
+}
+
+.container {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+

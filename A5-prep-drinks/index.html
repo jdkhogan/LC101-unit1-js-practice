@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Me Another | Drink Recipes</title>
+    <!-- TODO: uncomment links below (see Part C) -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <!-- TODO: uncomment line below (see Part A, 1) -->
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img id="logo" src="images/cocktail.png" height=100px width=100px />
+        <div id="header-text">
+            <p id="title">pour me another</p>
+            <p id="tagline">delicious drinks for every occasion</p> 
+        </div>
+    </header>
+
+    <!-- Primary Content -->
+    <main>
+
+        <!-- Form -->
+        <div id="search-area">
+            <form>
+                <div class="search-row">
+                    <p id=search-box-title>FIND RECIPES</p>
+                    <div class="input-item">
+                        <label class="type-label"><input class="type" type="radio" name="type-input" value="alcoholic">Alcohol</label>
+                        <label class="type-label"><input class="type" type="radio" name="type-input" value="non-alcoholic">No Alcohol</label>
+                        <label class="type-label"><input class="type" type="radio" name="type-input" value="both">Both</label>
+                    </div>
+                </div>
+                <div class="search-row">
+                    <div class="input-item">
+                        <select id="category-input" name="category">
+                            <!-- Options will be populated by JS -->
+                        </select>
+                    </div>
+                    <div class="input-item">
+                        <input id="keyword-input" type="text" placeholder="Drink name or ingredient" maxlength=20>
+                    </div>
+                    <div class="input-item">
+                        <button id="submit-button" type="submit">SEARCH</button>
+                        <button id="reset-button" type="reset">CLEAR ALL</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+        <!-- Results Area -->
+        <div id="results-area">
+            <div id="search-results">
+                <!-- Results will be handled by JS -->
+            </div>
+            <div id="no-results">
+                <img id="empty-glass" src="images/empty-glass.png" />
+                <p id="no-results-text">Search for recipes above!</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>drink recipes courtesy of <a id="db-link" href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB</a></p> 	
+    </footer>
+
+</body>
+
+</html>

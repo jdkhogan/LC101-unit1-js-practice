@@ -1,0 +1,352 @@
+[
+    {
+        "airline": "American",
+        "flightNumber": "AA 6035",     
+        "origin": "Charlotte (CLT)",
+        "departure": "6:02 am",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "8:27 am",
+        "gate": "1",
+        "status": "delayed"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 5340",     
+        "origin": "Atlanta (ATL)",
+        "departure": "8:21 am",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "9:33 am",
+        "gate": "3",
+        "status": "on time"
+    },
+    {
+        "airline": "United",
+        "flightNumber": "UA 3845",     
+        "origin": "Chicago (ORD)",
+        "departure": "11:43 am",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "1:56 pm",
+        "gate": "5",
+        "status": "cancelled"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 5223",     
+        "origin": "Charlotte (CLT)",
+        "departure": "1:28 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "3:49 pm",
+        "gate": "2",
+        "status": "on time"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 4990",     
+        "origin": "Atlanta (ATL)",
+        "departure": "3:02 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "4:11 pm",
+        "gate": "4",
+        "status": "on time"
+    },
+    {
+        "airline": "United",
+        "flightNumber": "UA 5090",     
+        "origin": "Houston (IAH)",
+        "departure": "1:27 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "5:15 pm",
+        "gate": "5",
+        "status": "on time"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 4751",     
+        "origin": "Atlanta (ATL)",
+        "departure": "5:09 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "6:11 pm",
+        "gate": "3",
+        "status": "delayed"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 6154",     
+        "origin": "Charlotte (CLT)",
+        "departure": "5:39 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "7:26 pm",
+        "gate": "1",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 4197",     
+        "origin": "Dallas (DFW)",
+        "departure": "1:59 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "7:47 pm",
+        "gate": "2",
+        "status": "on time"
+    },
+    {
+        "airline": "United",
+        "flightNumber": "UA 3491",     
+        "origin": "Chicago (ORD)",
+        "departure": "4:17 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "8:46 pm",
+        "gate": "5",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 5690",     
+        "origin": "Washington (DCA)",
+        "departure": "6:42 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "9:34 pm",
+        "gate": "1",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 5406",     
+        "origin": "Charlotte (CLT)",
+        "departure": "7:58 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "9:49 pm",
+        "gate": "2",
+        "status": "cancelled"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 5213",     
+        "origin": "Atlanta (ATL)",
+        "departure": "8:37 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "9:50 pm",
+        "gate": "4",
+        "status": "on time"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 5324",     
+        "origin": "Detroit (DTW)",
+        "departure": "6:21 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "10:44 pm",
+        "gate": "3",
+        "status": "on time"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 5204",     
+        "origin": "Atlanta (ATL)",
+        "departure": "10:26 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "11:38 pm",
+        "gate": "4",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 3901",     
+        "origin": "Dallas (DFW)",
+        "departure": "5:34 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "11:41 pm",
+        "gate": "1",
+        "status": "delayed"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 5436",     
+        "origin": "Charlotte (CLT)",
+        "departure": "10:33 pm",
+        "destination": "Chattanooga (CHA)",
+        "arrival": "12:05 am",
+        "gate": "2",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 5034",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "5:16 am",
+        "destination": "Charlotte (CLT)",
+        "arrival": "7:22 am",
+        "gate": "1",
+        "status": "on time"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 5103",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "5:44 am",
+        "destination": "Atlanta (ATL)",
+        "arrival": "6:01 am",
+        "gate": "3",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 3964",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "6:10 am",
+        "destination": "Dallas (DFW)",
+        "arrival": "10:34 am",
+        "gate": "2",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 5450",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "6:35 am",
+        "destination": "Charlotte (CLT)",
+        "arrival": "8:47 am",
+        "gate": "1",
+        "status": "on time"
+    },
+    {
+        "airline": "United",
+        "flightNumber": "UA 3416",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "7:00 am",
+        "destination": "Chicago (ORD)",
+        "arrival": "11:52 am",
+        "gate": "5",
+        "status": "on time"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 5364",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "7:30 am",
+        "destination": "Detroit (DTW)",
+        "arrival": "12:44 pm",
+        "gate": "4",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 5360",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "7:39 am",
+        "destination": "Washington (DCA)",
+        "arrival": "10:04 am",
+        "gate": "2",
+        "status": "on time"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 4944",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "8:40 am",
+        "destination": "Atlanta (ATL)",
+        "arrival": "9:51 am",
+        "gate": "3",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 6001",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "8:59 am",
+        "destination": "Charlotte (CLT)",
+        "arrival": "11:18 am",
+        "gate": "1",
+        "status": "delayed"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 4757",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "3:11 pm",
+        "destination": "Atlanta (ATL)",
+        "arrival": "4:29 pm",
+        "gate": "4",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 5223",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "4:19 pm",
+        "destination": "Charlotte (CLT)",
+        "arrival": "6:32 pm",
+        "gate": "2",
+        "status": "on time"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 4990",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "5:00 pm",
+        "destination": "Atlanta (ATL)",
+        "arrival": "6:16 pm",
+        "gate": "3",
+        "status": "on time"
+    },
+    {
+        "airline": "United",
+        "flightNumber": "UA 3766",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "5:09 pm",
+        "destination": "Chicago (ORD)",
+        "arrival": "9:24 pm",
+        "gate": "5",
+        "status": "on time"
+    },
+    {
+        "airline": "United",
+        "flightNumber": "UA 5041",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "5:51 pm",
+        "destination": "Houston (IAH)",
+        "arrival": "9:41 pm",
+        "gate": "5",
+        "status": "delayed"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 4751",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "6:51 pm",
+        "destination": "Atlanta (ATL)",
+        "arrival": "8:04 pm",
+        "gate": "4",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 6154",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "7:51 pm",
+        "destination": "Charlotte (CLT)",
+        "arrival": "10:02 pm",
+        "gate": "1",
+        "status": "cancelled"
+    },
+    {
+        "airline": "Delta",
+        "flightNumber": "DL 4879",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "7:59 pm",
+        "destination": "Atlanta (ATL)",
+        "arrival": "9:14 pm",
+        "gate": "3",
+        "status": "on time"
+    },
+    {
+        "airline": "American",
+        "flightNumber": "AA 4197",     
+        "origin": "Chattanooga (CHA)",
+        "departure": "8:19 pm",
+        "destination": "Dallas (DFW)",
+        "arrival": "12:10 am",
+        "gate": "2",
+        "status": "on time"
+    }
+]
