@@ -22,6 +22,7 @@ Some learnings from this project, in no particular order:
 
 
 2. When declaring an Angular class, first declare the variables with type, then initialize them with the constructor
+        
         class XYZ {
             var1: string;
             var2: [];
@@ -51,17 +52,23 @@ Some learnings from this project, in no particular order:
 
 3. `.forEach` is an array method that executes a function once per element, in ascending index order.
 	It does not wait for promises, and it does not break or stop unless it throws an exception.
-	rather than:  	
+	
+    rather than:  	
+    
     `for (let i = 0; i < items.length; i++) { function } `
-	we can use:  	
+	
+    we can use:  	
+    
     `items.forEach(someFunc(item))`
 
 	If you want to work with the index, you can pass it as an arg, i.e.  
-	`items.forEach( 
-        function(items, index) { //some operation }
-        );`
+	
+        items.forEach( 
+            function(items, index) { //some operation }
+            );
 
-In `app.component.ts` we use `.forEach()` on the JSON array created with our fetch operation: 
+    In `app.component.ts` we use `.forEach()` on the JSON array created with our fetch operation: 
+        
         getFlights(): void {
             fetch("assets/data/flights.json").then((response) => {
                     response.json().then((json) => {
@@ -72,7 +79,7 @@ In `app.component.ts` we use `.forEach()` on the JSON array created with our fet
 
 4. Attribute directives allow us to pass information down to child elements. Here we set the `<app-board>` elements with our arrivals and departures in the `flights` and `type` vars so that we can fill in the data later in the code. 
 
-The structural directive `*ngFor` enables us to loop through the flight objects in the Flight arrays. We can then use the individual properties, e.g. `flight.gate`, to display all the details.
+    The structural directive `*ngFor` enables us to loop through the flight objects in the Flight arrays. We can then use the individual properties, e.g. `flight.gate`, to display all the details.
 
 5. Using ternary expressions allows us to build 'if/else' statements directly into inline elements. In this case, 
 	
@@ -87,9 +94,12 @@ The structural directive `*ngFor` enables us to loop through the flight objects 
 6. Setting boolean values in `app.component.ts` allows us to quickly turn on/off elements on our page. We set a `showArrivals` var initially to show the Arrival or Departure board, but later we call on it to bring focus to the selected tab, and we set and reset it with the `(click)` action. 
 	
     Use boolean logic! 
-	    [some HTML property]="!showArrivals"	// used here to set the active tab class 'on/off'
-		(click)="showArrivals = false"		// used here to change the value of showArrivals depending on click
-		*ngIf(!showArrivals)					// used with structural directive ngIf to turn flight tables 'on/off'
+	    
+        [some HTML property]="!showArrivals"	// used here to set the active tab class 'on/off'
+		
+        (click)="showArrivals = false"		// used here to change the value of showArrivals depending on click
+		
+        *ngIf(!showArrivals)					// used with structural directive ngIf to turn flight tables 'on/off'
 
 7. The filter function in this project takes in a keyword and uses a for loop to run through the flight array. 
 	To filter the flights, we use `.indexOf(keyword) >= 0` since indexOf will return an index if the keyword is found.
@@ -103,7 +113,7 @@ The structural directive `*ngFor` enables us to loop through the flight objects 
 	
     The spread operator `[...originalArr]` can be used to quickly clone an iterable. Spread allows an iterable to be expanded to fit when 0 or more args are needed for a function, or 0 or more elements for an array, etc. 
 		
-        e.g. `myFunc(...args);`  or  to concat: `combinedArr = [...arr1, ...arr2];`
+    e.g. `myFunc(...args);`, or to concat: `combinedArr = [...arr1, ...arr2];`
 	
     Note that spread does not fully clone mutlidimensional arrays. Values below the first level are copied by reference, which is exactly what we are trying to avoid here! One way to make deep copies is with `JSON.parse` and `JSON.stringify`.
 
