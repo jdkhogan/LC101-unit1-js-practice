@@ -1,6 +1,6 @@
 #LC-A2-Prep-Physicians-Directory
 
-##### Physicians' Directory project ([starter code](https://replit.com/@CarolineRose/PhysicianDirectory-StarterCode#index.js) and [instructions](/instructions.text))
+##### Physicians' Directory project ([starter code](https://replit.com/@CarolineRose/PhysicianDirectory-StarterCode#index.js) and [instructions](/A2-prep-physicians_dir/instructions.txt))
 
 ###### Highlights: Arrays | User Input | RegEx | .map () and .filter() 
 
@@ -25,4 +25,4 @@ The Physician's Directory project required me to take in a directory of doctors 
 
 6. To format the results, a helper function returns either "No results" if there were no matches, or formatted string literals sorted by last name.
 
-![Image](/physicians_screenshot.png)
+![Image](/A2-prep-physicians_dir/physicians_screenshot.png)
