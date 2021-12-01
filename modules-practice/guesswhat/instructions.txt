@@ -1,0 +1,27 @@
+GUESS WHAT?
+
+You'll be putting together a game where the user has to try to guess a word or phrase one letter at a time. Unlike Hangman, there is no morbid depiction of a guy hanging from a noose one body part at a time. And unlike Wheel of Fortune, there is no glitzy wheel to turn for money & prizes and most certainly no Vanna White. But it still provides a little entertainment and figuring out how to code it is a good stretch for you as a beginner.
+
+So the first thing you want to do is to welcome the user to the game and explain how the scoring system works and the difference between the two modes. You can use this or write your own:
+
+	******************* 
+	*   GUESS WHAT?   * 
+	******************* 
+
+	REGULAR MODE: You will be given a category and a phrase, and you can guess one letter at a time until you are ready to solve the puzzle. You start off with 200 points. Each turn will cost you points, so try to solve it as soon as possible! Here's how the scoring works:
+		-5 points for correct letter (-10 if incorrect)
+		+15 points for early solve (-15 if incorrect)
+
+	QUICK PLAY: The phrase will already have the most common letters filled in. You guess three more consonants and a vowel, then have one chance to solve the puzzle and win.
+
+The game should then run on a loop so that for each puzzle they can choose Regular Mode or Quick Play and then the correct version will run for a randomly-selected puzzle. After they solve it (or fail), ask if they want to play again. If they choose not to play again, display a closing message.
+
+You may have noticed the file puzzles.js - that is a module and you'll need to import it into index.js in order to access its data. Feel free to add to or change the categories and phrases as you wish!
+
+Other requirements:
+	- All user input should be validated so that it will not break the program
+	- User input should be handled for case insensitivity
+	- All letters of a puzzle should initially be represented with asterisks when a new puzzle is given, unless it's quick play mode with some letters already showing; do not convert blanks or punctuation
+	- In regular mode, if a user types in "solve" instead of a letter, they should be given a chance to solve the entire thing at once... but unlike Quick Play, if they're wrong they can keep going with a point deduction. If they're right, however, and adding the 15 points for an early solve would put their final score over 200, just make it 200.
+
+Have fun!
