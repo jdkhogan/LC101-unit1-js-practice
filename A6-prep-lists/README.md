@@ -13,7 +13,7 @@ This project gave me additional practice on:
 - custom CSS classes and booleans to toggle forms from hidden to visible
 
 
-![Image](/LC-A6-prep/lists_screenshot.png)
+![Image](/A6-prep-lists/lists_screenshot.png)
 
 
 ---
