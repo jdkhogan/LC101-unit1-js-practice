@@ -19,7 +19,7 @@ This project gave me additional practice on:
 
 Some notes/musings on building the app
 
-1. The first functionality we built was to enable the "Add New List" button, which uses a boolean to clever effect. When the page opens, the `addingNewList` variable is set to false. Clicking the button sets the value to true, and an ngIf on the button removes the button at the same time. Below, a list builder form uses the boolean to pop into focus. Clicking Cancel on the list builder sets the same `addingNewList` var false, and we are back to square one.
+1. The first functionality we built was to enable the "Add New List" button, which uses a boolean to clever effect. When the page opens, the `addingNewList` variable is set to false. Clicking the button sets the value to true, and an `ngIf` on the button removes the button at the same time. Below, a list builder form uses the boolean to pop into focus. Clicking Cancel on the list builder sets the same `addingNewList` var false, and we are back to square one.
 
 2. We then apply multiple TS directives to the list title buttons. 
 	
@@ -35,7 +35,7 @@ Some notes/musings on building the app
 
 5. Misc. 
 
-    Using `confirm("")` in Angular is the equvalent of window.confirm, and is used to ensure we confirm the user wants to delete the list.
+    Using `confirm("")` in Angular is the equvalent of `window.confirm`, and is used here to ensure we confirm the user wants to delete the list.
 
     The `deleteList()` method uses `.splice()` along with `.indexOf()` to find the list in the array, then delete it. It then sets the current list to the first available (i.e. `allLists[0]`).
 
@@ -43,6 +43,6 @@ Some notes/musings on building the app
 
     The `addItem()` method simple creates a new empty string item at the end of the list. We can then edit that item to add the new text, or we can leave it alone and wait for the `saveList()` method to delete empty items.
 
-6. To build the sort function, I initially thought I might just assign the `(click)` action to `currentList.items.sort()`, but this is case-senstitive! It displayed caps first, then lower case items (starting with AA bateries..., Parmesan cheese, apples, bananas,...toothpaste).
+6. To build the sort function, I initially thought I might just assign the `(click)` action to `currentList.items.sort()`, but this is case-senstitive! It displayed caps first, then lower case items (starting with AA batteries..., Parmesan cheese, apples, bananas, ... toothpaste).
 
     Instead I found an implementation that uses an anonymous function combined with `.localeCompare()` to sort the list properly.
