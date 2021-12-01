@@ -21,28 +21,28 @@ Some learnings from this project, in no particular order:
 	`import { Flight } from './flight';`
 
 
-2. When declaring an Angular class, first declare the variables with type, then initialize them with the constructor.
-	`class XYZ {
-		var1: string;
-		var2: [];
+2. When declaring an Angular class, first declare the variables with type, then initialize them with the constructor
+        class XYZ {
+            var1: string;
+            var2: [];
 
-		constructor(var1: string) {
-			this.var1 = var1;
-		 	this.var2 = [];
-		}
-		method1(var3: string): void {
-			// does something
-			// returns nothing
-		} 
+            constructor(var1: string) {
+                this.var1 = var1;
+                this.var2 = [];
+            }
+            method1(var3: string): void {
+                // does something
+                // returns nothing
+            } 
 
-		method2(): string {
-			for (element of this.var2) {
-				// do something
-			}
-			return someStr;
-			
-		} 
-	}` 
+            method2(): string {
+                for (element of this.var2) {
+                    // do something
+                }
+                return someStr;
+                
+            } 
+        }
 
     1. Since var2 is not passed a value in the constructor, we must set it separately.
     2. method1 only manipulates variables and does not return anything, se we must explicitly declare that it returns void.
@@ -51,47 +51,61 @@ Some learnings from this project, in no particular order:
 
 3. `.forEach` is an array method that executes a function once per element, in ascending index order.
 	It does not wait for promises, and it does not break or stop unless it throws an exception.
-	rather than:  	`for (let i = 0; i < items.length; i++) { function } `
-	we can use:  	`items.forEach(someFunc(item))`
+	rather than:  	
+    `for (let i = 0; i < items.length; i++) { function } `
+	we can use:  	
+    `items.forEach(someFunc(item))`
 
 	If you want to work with the index, you can pass it as an arg, i.e.  
-	`items.forEach( function(items, index) { //some operation });`
+	`items.forEach( 
+        function(items, index) { //some operation }
+        );`
 
 In `app.component.ts` we use `.forEach()` on the JSON array created with our fetch operation: 
-	`getFlights(): void {
-		fetch("assets/data/flights.json").then((response) => {
-        	    response.json().then((json) => {
-            	    json.forEach((flight: any) => { 
-            	    	// build flight tables
-                    }}}}`
-`
+        getFlights(): void {
+            fetch("assets/data/flights.json").then((response) => {
+                    response.json().then((json) => {
+                        json.forEach((flight: any) => { 
+                            // build flight tables
+                        
+
 
 4. Attribute directives allow us to pass information down to child elements. Here we set the `<app-board>` elements with our arrivals and departures in the `flights` and `type` vars so that we can fill in the data later in the code. 
 
 The structural directive `*ngFor` enables us to loop through the flight objects in the Flight arrays. We can then use the individual properties, e.g. `flight.gate`, to display all the details.
 
 5. Using ternary expressions allows us to build 'if/else' statements directly into inline elements. In this case, 
-	`{{type === "arrival" ? flight.origin : flight.destination}}`
+	
+    `{{type === "arrival" ? flight.origin : flight.destination}}`
 	yields the origin airport for arrivals, and the destination airport for departures. 
-	Note that strings must be enclosed in "quotes" to be interpreted properly, whether in the boolean expression evaluated or as the executed 'if/else' expressions.
-	'<th> {{ type === "arrival" ? "Origin" : "Destination" }} </th>' sets the header to either Origin/Destination
+	
+    Note that strings must be enclosed in "quotes" to be interpreted properly, whether in the boolean expression evaluated or as the executed 'if/else' expressions.
+	
+    `<th> {{ type === "arrival" ? "Origin" : "Destination" }} </th>` 
+    sets the header to either Origin/Destination.
 
 6. Setting boolean values in `app.component.ts` allows us to quickly turn on/off elements on our page. We set a `showArrivals` var initially to show the Arrival or Departure board, but later we call on it to bring focus to the selected tab, and we set and reset it with the `(click)` action. 
-	Use boolean logic! 
-		`[some HTML property]="!showArrivals"`	-> used here to set the active tab class 'on/off'
-		`(click)="showArrivals = false"`			-> used here to change the value of showArrivals depending on click
-		`*ngIf(!showArrivals)`					-> used with structural directive ngIf to turn flight tables 'on/off'
+	
+    Use boolean logic! 
+	    [some HTML property]="!showArrivals"	// used here to set the active tab class 'on/off'
+		(click)="showArrivals = false"		// used here to change the value of showArrivals depending on click
+		*ngIf(!showArrivals)					// used with structural directive ngIf to turn flight tables 'on/off'
 
 7. The filter function in this project takes in a keyword and uses a for loop to run through the flight array. 
 	To filter the flights, we use `.indexOf(keyword) >= 0` since indexOf will return an index if the keyword is found.
 		Note that `.indexOf()` returns the first occurence. if we need more than that, we would use a different solution.
 
 8. To pass the filtered flight array, the filtered array is cloned as follows:
-	`this.filteredArrivals = [...matchingArrivals];`
-	We clone an array to avoid conflicts when changes might be made to the original or the clone. 
-	The spread operator `[...originalArr]` can be used to quickly clone an iterable. Spread allows an iterable to be expanded to fit when 0 or more args are needed for a function, or 0 or more elements for an array, etc. 
-		e.g. `myFunc(...args);`  or  to concat: `combinedArr = [...arr1, ...arr2];`
-	Note that spread does not fully clone mutlidimensional arrays. Values below the first level are copied by reference, which is exactly what we are trying to avoid here! One way to make deep copies is with `JSON.parse` and `JSON.stringify`.
+	
+    `this.filteredArrivals = [...matchingArrivals];`
+	
+    We clone an array to avoid conflicts when changes might be made to the original or the clone. 
+	
+    The spread operator `[...originalArr]` can be used to quickly clone an iterable. Spread allows an iterable to be expanded to fit when 0 or more args are needed for a function, or 0 or more elements for an array, etc. 
+		
+        e.g. `myFunc(...args);`  or  to concat: `combinedArr = [...arr1, ...arr2];`
+	
+    Note that spread does not fully clone mutlidimensional arrays. Values below the first level are copied by reference, which is exactly what we are trying to avoid here! One way to make deep copies is with `JSON.parse` and `JSON.stringify`.
 
 9. We call `filterFlights()` at the top level, in `app.component.html` on the form on either `click` or `keyup.enter`. Flights are filtered with code in `app.component.ts` based on keyword, then the `filteredArrivals` or `filteredDepartures` array is handed off to `<app-board>`, which contains the code to break out the flights into rows. `.resetFlights()` simply sets the two arrays equal to the original unfiltered arrays.
 
