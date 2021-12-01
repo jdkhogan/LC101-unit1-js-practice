@@ -1,0 +1,21 @@
+PHYSICIAN DIRECTORY - INSTRUCTIONS
+
+You are going to create a small program that allows a user to find the names and numbers of local doctors. They should be able to search by name, first letter of last name, or area code, and you should also give them the option to view all. If searching by name, they should give only a part of or whole first name OR last name, not both names. If searching by area code - there are three choices: 314, 636, and 618.
+
+The data for each doctor has been given to you, but you should transform it so that the first name, last name, and phone number are three separate strings in an array instead of comma-separated values in a single string.
+
+Search results should be formatted with each doctor's name and number on separate lines, with a space in-between each listing, like this:
+
+Dr. Julian Bashir
+636-555-3948
+
+Dr. Beverly Crusher
+314-555-9482
+
+You can customize how you would like to display the results otherwise.
+
+After results are displayed, user should be asked if they wish to perform another search. If they don't want to continue, the program should end with some kind of closing message to the user.
+
+Make sure to implement case insensitivity where needed.
+
+(Note: alphabetizing the results by last name is not a requirement, but a great idea!)
