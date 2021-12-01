@@ -1,0 +1,87 @@
+/********************************************/
+/************ CABINETS, PART TWO ************/
+/*********** by Carrie Jones, TLF ***********/
+/********************************************/
+
+ 
+Students - feel free to fork this to your own repl and practice! For more JS examples and practice problems, see the following document: https://tinyurl.com/y3bn6st4 
+
+Prep for Graded Assignment #3 - this includes TDD, classes, modules, and building complex objects.
+
+Solution:
+	https://repl.it/@CarolineRose/CabinetsPart2
+
+
+INSTRUCTIONS
+------------
+
+Remember, practing TDD methodology means writing the test _before_ you write the code you plan to test.
+
+	assert.throws()
+		- used to check error handling
+		- requires the 'actual' code to be enclosed in an anonymous function
+		- requires the 'expected' code to be an object with a message property
+
+	assert.strictEqual()
+		- used to compare primitives (string, number, etc.)
+
+	assert.deepStrictEqual()
+		- used to compare values inside structures like arrays and generic objects
+
+	assert.deepEqual()
+		- used to compare objects that have been instantiated from a custom class
+
+
+Proceed in the following order:
+
+CONTENTS (Tests 1-2)
+Start with contents.js (the class) and contents.spec.js (the tests). This is the simplest class, with only three properties storing numbers and only two tests. Most of this will be written for you, but there are some parts to complete. Don't forget to export and import the class for the testing.
+
+SHELF (Tests 3-11)
+This class is more involved since one of its properties holds an object from the Contents class. Handle the exports and imports needed for both shelf.js and shelf.spec.js. This where you really want to start practicing TDD, especially when writing methods of the Shelf class.
+
+CABINET (Tests 12-20)
+The most complex class holds multiple objects of the Shelf class (which in turn hold Contents objects). Carefully practice TDD as you test the constructor and then write each method as outlined in the cabinet.js and cabinet.spec.js files.
+
+***************************************************
+For the final method in Cabinet, your goal is to submit one or more sets of data to pass into the rearrangeCabinet() method. Once the changes are made, the method should return an object like the one under OUTPUT in the following example.
+***************************************************
+
+CREATE CABINET OBJECT
+topShelf = new Shelf("Top Shelf", new Contents(15, 2, 5));
+middleShelf = new Shelf("Middle Shelf", new Contents(9, 3, 3));
+bottomShelf = new Shelf("Bottom Shelf", new Contents(21, 1, 2));
+stagingArea = new Shelf("Staging Area", new Contents(13, 2, 4));
+myCabinet = new Cabinet([topShelf, middleShelf, bottomShelf], stagingArea);
+
+SET UP DATA FOR CHANGES TO MAKE
+info1 = ["to", "Middle Shelf", "books", 5];
+info2 = ["to", "Bottom Shelf", "frames", 1];
+info3 = ["to", "Top Shelf", "decor", 3];
+info4 = ["from", "Top Shelf", "frames", 2];
+info5 = ["from", "Bottom Shelf", "books", 8];
+info6 = ["from", "Middle Shelf", "decor", 6];
+infoArray = [info1, info2, info3, info4, info5, info6];
+
+INPUT
+report = myCabinet.rearrangeCabinet(infoArray);
+
+OUTPUT (returned from method)
+{
+	initialStatus: 	{
+						cabinetTotals: "Overall, the cabinet currently holds 45 books, 6 frames, and 10 decorative objects.",
+						stagingTotals: "Staging Area currently has 13 book(s), 2 frame(s), and 4 decorative item(s)."
+					},
+	changesMade:	[
+						"5 book item(s) moved to Staging from Middle Shelf.",
+						"1 frame item(s) moved to Staging from Bottom Shelf.",
+						"3 decor item(s) moved to Staging from Top Shelf.",
+						"2 frame item(s) moved from Staging to Top Shelf.",
+						"8 book items(s) moved from Staging to Bottom Shelf.",
+						"6 decor item(s) moved from Staging to Middle Shelf."
+					],
+	finalStatus:	{
+						cabinetTotals: "Overall, the cabinet currently holds 48 books, 7 frames, and 13 decorative objects.",
+						stagingTotals: "Staging Area currently has 10 book(s), 1 frame(s), and 1 decorative item(s)."
+					}
+}
