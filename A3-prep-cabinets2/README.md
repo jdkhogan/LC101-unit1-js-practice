@@ -1,4 +1,4 @@
-#LC-A3-Prep-Cabinets-pt2
+# LC-A3-Prep-Cabinets-pt2
 
 ##### Building Storage, part 2 ([starter code and instructions](https://replit.com/@CarolineRose/CabinetsPart2-StarterCode#instructions.txt))
 
