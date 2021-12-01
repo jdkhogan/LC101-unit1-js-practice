@@ -1,0 +1,127 @@
+/*
+    Anything in this file will apply to all components, unless overriden in one of the component's own CSS files.
+*/
+
+
+/** ELEMENTS **/
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    color: #ccc;
+    font-family: 'Manjari', sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 1.8rem;
+    margin: 0px 0px 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 15px 0px;
+}
+
+h5 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 5px 0px 5px; 
+}
+
+h6 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0px; 
+}
+
+p {
+    margin: 0px 0px 5px;
+}
+
+img {
+    width: 100%; /* of whatever container it's in */
+    border: 2px #ccc solid;
+    margin: 0px;
+}
+
+input {
+    background-color: #ccc;
+    order: 2px solid #666;
+    padding: 2px;
+}
+
+
+/** CLASSES **/
+
+.pseudobutton {
+    font-size: 20px;
+    height: 28px;
+    width: 240px;
+    color: #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 15px 0px;
+    margin: 0px 0px 15px;
+}
+
+.pseudobutton:hover {
+    cursor: pointer;
+    color: #222;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.warning {
+    color: #962c2c;
+    margin: 10px 0px;
+}
+
+.empty-warning {
+    background-color: #ec9b9b;
+    border: 2px solid #962c2c;
+}
+
+.small-button {
+    font-size: 20px;
+    height: 28px;
+    width: 100px;
+    color: #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 15px 0px;
+    margin: 10px 20px 0px 0px;
+}
+
+.small-button:hover {
+    cursor: pointer;
+    color: #222;
+    background-color: #eee;
+    border: 1px solid #eee;
+}
+

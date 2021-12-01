@@ -1,0 +1,38 @@
+
+
+/* IDs */
+
+#toggle {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    right: 15px;
+    top: 15px;
+}
+
+
+/* CLASSES */
+
+.pseudobutton {
+    font-size: 0.8rem;
+    height: 1.2rem;
+    width: 80px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0.15rem;
+    margin: 0.3rem;
+}
+
+.pseudobutton:hover {
+    opacity: 0.85;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.selected {
+    background-color: white;
+    color: #ee627a;
+}

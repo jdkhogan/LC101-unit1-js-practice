@@ -1,0 +1,84 @@
+/** ELEMENTS **/
+
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+app-current-list {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+input {
+    width: 160px;
+    margin: 0px 13px 10px 0px;
+}
+
+textarea {
+    font-family: sans-serif;
+    background-color: #ccc;
+    border: 2px solid #666;
+    padding: 2px;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-family: sans-serif;
+}
+
+select {
+    background-color: #ccc;
+}
+
+/** IDs **/
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    padding: 30px;
+    margin: 0px;
+}
+
+#add-new {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#new-list-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    margin-right: 15px;
+}
+
+
+
+
+/** CLASSES **/
+
+.not-selected {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.selected {
+    color: #222;
+    background-color: #ccc;
+}
+
+.selected:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+}
+

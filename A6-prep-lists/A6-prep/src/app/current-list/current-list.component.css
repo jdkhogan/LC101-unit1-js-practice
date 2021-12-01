@@ -1,0 +1,82 @@
+/** ELEMENTS **/
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 40px;
+    margin: 0px;
+}
+
+input {
+    margin: 0px 10px 10px 0px;
+}
+
+textarea {
+    font-family: sans-serif;
+    background-color: #ccc;
+    border: 2px solid #666;
+    margin: 0px 0px 10px;
+    padding: 2px;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-family: sans-serif;
+}
+
+select {
+    background-color: #ccc;
+}
+
+
+/** IDs **/
+
+#desc {
+    font-weight: 100;
+    font-size: 1.3rem;
+    margin: 5px 0px;
+}
+
+#toggle {
+    margin: 5px 0px 10px;
+}
+
+#edit-list-form {
+    margin: 20px 0px;
+}
+
+#add-new-item {
+    margin: 0px 0px 10px;
+    cursor: pointer;
+}
+
+
+/** CLASSES **/
+
+.mini-buttons {
+    font-weight: 100;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 0px 12px 0px 0px;
+    cursor: pointer;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    font-size: 1.1rem;
+    margin: 5px 0px 0px;
+}
+
+.list-item-edit {
+    width: 300px;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+}

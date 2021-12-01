@@ -1,0 +1,50 @@
+<!-- IMPORTANT: Before trying to add functionality to this file, get familiar with the properties and methods of the component's TS file -->
+
+<section>
+
+    <!-- On left -->
+    <div id="main">
+
+        <!-- All the lists -->
+        <!-- 
+            xTODO: Add boolean logic to conditional classes, 
+            xTODO: iterate over all lists, 
+            xTODO: display name of each list, and 
+            xTODO: add click event so list can be viewed on the right half of the page 
+        -->
+        <div class="pseudobutton" [class.selected]="list === currentList" [class.not-selected]="list !== currentList" *ngFor="let list of allLists" (click)="viewNewList(list)">{{list.title}}</div>
+
+        <!-- Toggle to add new list -->
+        <!-- xTODO: Make it visible only when not adding a new list, and xTODO: add click event to toggle form --> 
+        <h4 id="add-new" *ngIf="!addingNewList" (click)="addingNewList=true">+ Add new list</h4>
+
+        <!-- Form to create new list -->
+        <!-- xTODO: Make visible only when adding new list -->
+        <div id="new-list-form" *ngIf="addingNewList">
+            <h4 id="create-new">Create a New List:</h4>
+            <form #form>
+                <!-- xTODO: Add conditional class for .empty-warning when trying to create with this field blank -->
+                <input #titleField type="text" maxLength="20" placeholder="Title" [class.empty-warning]="formIncomplete"/>
+                <select #typeField>
+                    <option value="general">General</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="to do">To Do</option>
+                </select>
+                <textarea #descField rows="4" cols="30" maxLength="120" placeholder="Description"></textarea>
+                <!-- xTODO: For both buttons, add click events. Specifically, make sure the Create button passes in the values of the input fields when it calls the method to create a new list, and make sure the Cancel button makes the form disappear and undoes any warnings that might have been triggered. -->
+                <div class="form-buttons">
+                    <div id="submit" class="small-button" (click)="createNewList(titleField.value, typeField.value, descField.value)">Create</div>
+                    <div id="cancel" class="small-button" (click)="addingNewList=false; formIncomplete=false">Cancel</div>
+                </div>
+                
+                <!-- xTODO: Make sure this is visible only if the title field is left blank when the Create button is clicked (hint: look at what happens in the createNewList() method) -->
+                <div class="warning" *ngIf="formIncomplete">Please give your list a title!</div>
+            </form>
+        </div>
+    </div>
+
+    <!-- On right -->
+    <!-- xTODO: pass the currentList and allLists properties to the current-list component - you also need special code in current-list.component.ts for this to work! -->
+    <app-current-list [currentList]="currentList" [allLists]="allLists"></app-current-list>
+
+</section>
