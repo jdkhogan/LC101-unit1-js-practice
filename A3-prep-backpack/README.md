@@ -1,8 +1,8 @@
 # LC-A3-Prep-Backpack
 
-Backpack project ([starter code and instructions](https://replit.com/@CarolineRose/MarsRoverPrepExercise-TDD-StarterCode#backpack.js))
+##### Backpack project ([starter code and instructions](https://replit.com/@CarolineRose/MarsRoverPrepExercise-TDD-StarterCode#backpack.js))
 
-**Highlights:  TDD (Jasmine) | Classes | Objects | Arrays | Error Handling **
+###### Highlights:  TDD (Jasmine) | Classes | Objects | Arrays | Error Handling
 
 As review for Unit 1 of LaunchCode LC101 coding course, I am working on practice projects that cover some of the early concepts. This time: Classes and TDD.
 
